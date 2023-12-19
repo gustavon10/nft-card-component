@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@200;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+
+body {
+    background: hsl(217, 54%, 11%);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background: hsl(216, 50%, 16%);
+    width: 300px;
+    padding: 1.25rem;
+    border-radius: 15px;
+    box-shadow: 0px 5px 30px 10px hsla(217, 53%, 7%, 0.5);
+}
+
+.card {
+    background-image: url('../images/image-equilibrium.jpg');
+    width: 260px;
+    height: 260px;
+    background-size: cover;
+    position: relative;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+}
+
+.olho {
+    background-image: url('../images/icon-view.svg');
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.cor-de-fundo {
+    display: none;
+}
+
+.card:hover .olho {
+    display: block;
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.card:hover .cor-de-fundo {
+    background-color: rgb(0, 255, 247, 0.5);
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+h1#titulo {
+    font: 600;
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+    max-width: 10rem;
+}
+
+h1#titulo:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.cor-clara {
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 1rem;
+}
+
+.mesclar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.625rem;
+}
+
+.mesclar img {
+    margin-right: 0.50rem;
+}
+
+p.esquerda {
+    color: hsl(178, 100%, 50%);
+}
+
+p.direita {
+    color: hsl(215, 51%, 70%);
+}
+
+hr {
+    width: 100%;
+    height: 0px;
+    border: 0px;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin-bottom: 0.80rem;
+}
+
+article.usuario {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.60rem;
+}
+
+#img-usuario {
+    width: 30px;
+    height: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    
+}
+
+.usuario p {
+    margin-left: 0.80rem;
+    color: hsl(215, 51%, 70%);
+    
+}
+
+span.nome-usuario {
+    color: hsl(0, 0%, 100%);
+}
+
+.nome-usuario:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    color: hsl(215, 51%, 70%);
+    bottom: 1px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
